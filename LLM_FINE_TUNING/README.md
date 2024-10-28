@@ -7,12 +7,15 @@ We currently have two different methods for finetuning here:
 ### GPT-4o-mini
 
 - Fine-tuning an OpenAI doesn't explicitly require GPU access as the Fine-tuning happen on their cloud.
+- The dataset provided in the notebook is just a small demonstration on how the dataset should look but actual finetuning will require a larger and quality dataset depending on the use-case.
 
 ### Llama-3.1-8b
 
 - If you are going to Fine-tune Llama 3.1 8b, doing so on Google colab or some other jupyter environment which provide GPU access is a must. 
 - Here, I have personally used Google colab with T4 GPU.
 - You can create your own dataset and modify the templates according to your needs.
+- Unsloth, a fine-tuning library is utilized for fine-tuning here.
+- We fine-tuned the model on some Indian law and cases related data
 
 ## Note:
 
